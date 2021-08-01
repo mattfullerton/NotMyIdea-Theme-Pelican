@@ -61,7 +61,7 @@ a:hover, a:active {
 	text-shadow: 1px 1px 1px #333;
 }
 
-h1 a:hover {
+banner a:hover h1, banner a:hover strong {
     background-color: inherit
 }
 
@@ -174,22 +174,21 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 	padding: 2.5em 0 0 0;
 }
 
-	/* Banner */
-	#banner h1 {font-size: 3.571em; line-height: 0;}
-	#banner h1 a:link, #banner h1 a:visited {
+	/* Sitename */
+	a:link#sitename, a:visited#sitename{
 		color: #000305;
 		display: block;
 		font-weight: bold;
 		margin: 0 0 .6em .2em;
 		text-decoration: none;
 	}
-	#banner h1 a:hover, #banner h1 a:active {
+	a:hover#sitename, a:active#sitename {
 		background: none;
 		color: #C74350;
 		text-shadow: none;
 	}
-
-	#banner h1 strong {font-size: 0.36em; font-weight: normal;}
+	#sitename h1 {font-size: 3.571em;}
+	#sitename h1, #sitename h3 {margin: initial;}
 
 	/* Main Nav */
 	#banner nav {
