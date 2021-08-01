@@ -12,6 +12,9 @@
         {% if FEED_ALL_RSS %}
         <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_RSS_URL %}{{ FEED_ALL_RSS_URL }}{% else %}{{ FEED_ALL_RSS }}{% endif %}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
         {% endif %}
+        {% if ICON_URL %}
+        <link rel="icon" href="{{ ICON_URL }}" type="image/x-icon">
+        {% endif %}
         {% block extra_head %}{% endblock extra_head %}
         {% endblock head %}
 </head>
