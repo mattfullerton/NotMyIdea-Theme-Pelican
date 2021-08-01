@@ -347,6 +347,7 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 		.social a[href*='twitter.com'] {background-image: url('../images/icons/twitter.png');}
 		.social a[href*='vimeo.com'] {background-image: url('../images/icons/vimeo.png');}
 		.social a[href*='youtube.com'] {background-image: url('../images/icons/youtube.png');}
+		.social a[href*='mailto:'] {background-image: url('../images/email.svg');background-size: 16px auto; background-position-y: 6.5px !important;}
 
 /*
 	About
