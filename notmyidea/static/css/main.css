@@ -16,8 +16,7 @@
 
 /***** Global *****/
 /* Colors */
-:root{
-
+:root{ /* we could use the functions from https://una.im/css-color-theming/ to automatically derive the intermediate colors. */
 	--strengthened-main-background: #fff;
 	--main-background: #F5F4EF;
 	--weakened-main-background: #F4E3E3;
