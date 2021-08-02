@@ -198,6 +198,8 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 		color: var(--accent-color);
 		text-shadow: none;
 	}
+	#sitename img {height: 5em; margin-right: 0.4em}
+	#sitename div {display: inline-block;}
 	#sitename h1 {font-size: 3.571em;}
 	#sitename h1, #sitename h3 {margin: initial;}
 
