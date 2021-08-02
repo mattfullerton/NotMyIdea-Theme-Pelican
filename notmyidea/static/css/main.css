@@ -24,7 +24,7 @@
 	--weakened-main-color: #444;
 	--weakened-main-color-2: #333;
 	--main-color: #000305;
-	--accent-color: #C74350; /* #29a470 */
+	--accent-color: hsl(354, 54%, 52%);
 }
 
 /* Body */
