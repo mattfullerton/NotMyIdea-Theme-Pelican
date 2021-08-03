@@ -8,3 +8,8 @@ The initial commit already has the social media icons removed since their copyri
 ### Using this theme
 Download the folder `notmyidea`.
 Run pelican with the argument `-t /path/to/notmyidea` or put the line `THEME = '/path/to/notmyidea'` into the `pelicaconf.py` file.
+
+### Features
+- mobile friendly (but not highly optimized)
+- logo and favicon possible
+- easy to change colors
