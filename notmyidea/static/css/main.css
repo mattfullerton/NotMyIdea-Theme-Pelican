@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h3, h4, h5, h6 { margin-top: .8em; }
 
-hr { border: 2px solid var(--weakened-main-background-2); }
+hr { border: 0.10em solid var(--weakened-main-background); }
 
 /* Anchors */
 a {outline: 0;}
@@ -133,10 +133,21 @@ div.note {
    max-width: 300px;
 }
 
+/* simple footnotes plugin */
 sup{
 	font-size: smaller;
 	vertical-align: super;
 }
+sup a:link, sup a:visited{
+	text-decoration: none;
+}
+.simple-footnotes ::marker{
+	color: var(--accent-color);
+}
+.simple-footnotes{
+	font-size: smaller;
+}
+
 
 /* Tables */
 table {margin: .5em auto 1.5em auto; width: 98%;}
