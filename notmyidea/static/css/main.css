@@ -16,7 +16,7 @@
 
 /***** Global *****/
 /* Colors */
-:root{ /* we could use the functions from https://una.im/css-color-theming/ to automatically derive the intermediate colors. */
+:root.light{ /* we could use the functions from https://una.im/css-color-theming/ to automatically derive the intermediate colors. */
 	--strengthened-main-background: #fff;
 	--main-background: #F5F4EF;
 	--weakened-main-background: #F4E3E3;
@@ -24,6 +24,16 @@
 	--weakened-main-color: #444;
 	--weakened-main-color-2: #333;
 	--main-color: #000305;
+	--accent-color: hsl(354, 54%, 52%);
+}
+:root.dark{
+	--strengthened-main-background: #111;
+	--main-background: #323437;
+	--weakened-main-background: #444;
+	--weakened-main-background-2: #555;
+	--weakened-main-color: #BBB;
+	--weakened-main-color-2: #DADADA;
+	--main-color: #F3F3F3;
 	--accent-color: hsl(354, 54%, 52%);
 }
 
@@ -173,6 +183,16 @@ aside, nav, article, figure {
 	display: block;
 }
 
+/* Buttons */
+button{
+	color: var(--strengthened-main-background);
+	background: var(--main-color);
+	border-radius: 0.2em;
+	border: none;
+}
+
+
+
 /***** Layout *****/
 .body {clear: both; margin: 0 auto; max-width: 800px;}
 img.right, figure.right, div.figure.align-right {
@@ -192,6 +212,19 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
     margin-top: 0;
     margin-bottom: 0;
 }
+
+/*
+Dark-Theme Toggle 
+*****************/
+div.dark-theme-toggle{
+	position: absolute;
+	top: 0.5em;
+	right: 0.5em;
+}
+.dark .dark-theme-button,.light .light-theme-button{
+	display: none;
+}
+
 
 /*
 	Header

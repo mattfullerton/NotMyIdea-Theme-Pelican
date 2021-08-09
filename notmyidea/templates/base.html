@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
+<html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}" class="light">
 <head>
         {% block head %}
         <meta charset="utf-8" />
@@ -21,7 +21,8 @@
 </head>
 
 <body id="index" class="home">
-{% include 'github.html' %}
+        {% include 'github.html' %}
+        {% include 'darktheme.html' %}
         <header id="banner" class="body">
                 <a href="{{ SITEURL }}/" id="sitename">
                         {% if SITELOGO %}

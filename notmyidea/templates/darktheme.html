@@ -1,0 +1,23 @@
+{% if ALLOW_DARKTHEME %}
+<script>
+    var r = document.documentElement;
+    function enableDarktheme(){
+        r.classList.remove("light");
+        r.classList.add("dark");
+    }
+    function enableLighttheme(){
+        r.classList.remove("dark");
+        r.classList.add("light");
+    }
+
+</script>
+<div class="dark-theme-toggle">
+    <button class="light-theme-button" onclick="enableLighttheme()" title="Light mode">
+      Light Mode
+    </button>
+    <button class="dark-theme-button" onclick="enableDarktheme()" title="Dark mode">
+      Dark Mode
+    </button>
+</div>
+    
+{% endif %}
