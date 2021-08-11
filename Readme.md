@@ -13,4 +13,5 @@ Run pelican with the argument `-t /path/to/notmyidea` or put the line `THEME = '
 - mobile friendly (but not highly optimized)
 - logo and favicon possible
 - easy to change colors
-- comes with a dark theme (optionally including a cookie to remember the preference)
+- comes with a dark theme (setting can optionally be saved to local storage)
+- supports the plugin [`simple-footnotes`](https://github.com/pelican-plugins/simple-footnotes/)
