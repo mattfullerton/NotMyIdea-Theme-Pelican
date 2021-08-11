@@ -15,3 +15,4 @@ Run pelican with the argument `-t /path/to/notmyidea` or put the line `THEME = '
 - easy to change colors
 - comes with a dark theme (setting can optionally be saved to local storage)
 - supports the plugin [`simple-footnotes`](https://github.com/pelican-plugins/simple-footnotes/)
+- light bot protection for emails addresses (they can be encrypted so that bots which doesn't use javascript won't get the email address)

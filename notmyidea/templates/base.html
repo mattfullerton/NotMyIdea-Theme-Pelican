@@ -67,12 +67,18 @@
                             <li><a href="{{ FEED_DOMAIN }}/{% if FEED_ALL_RSS_URL %}{{ FEED_ALL_RSS_URL }}{% else %}{{ FEED_ALL_RSS }}{% endif %}" type="application/rss+xml" rel="alternate">rss feed</a></li>
                             {% endif %}
 
-                        {% for name, link in SOCIAL %}
+                        {% for name, link, encrypted in SOCIAL %}
+                            {% if encrypted %}
+                            <li><a href="" class="decrypt" encrypted='{{ link }}'>{{ name }}</a>
+                                <noscript>Enable Javascript to get access to email addresses (This is a countermeasure against spam bots).</noscript></li>
+                            {% else %}
                             <li><a href="{{ link }}">{{ name }}</a></li>
+                            {% endif %}
                         {% endfor %}
                         </ul>
                 </div><!-- /.social -->
         {% endif %}
         </section><!-- /#extras -->
+        {% include 'email_protection.html' %}
 </body>
 </html>

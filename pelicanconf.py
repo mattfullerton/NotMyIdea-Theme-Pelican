@@ -1,6 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
+# Email protection
+EMAIL_KEY = '^Ü;¤q\983t4¤Ï.²d¶`?h}p"+RËR®ÔpöÁÀ=Y.v¹Ýò>#Y²ßáéþ3yGÝR'
+def encrypt(input):
+	output = ''
+	key = EMAIL_KEY
+	l = len(key)
+	for i in range(len(input)):
+		output += chr(ord(input[i]) ^ ord(key[i%l]))
+	return output
+
+
 SITENAME = 'Headline'
 SITESUBTITLE = 'Subtitle'
 SITEURL = ''
@@ -31,7 +42,7 @@ LINKS = (('Impressum', 'impressum'),
 
 # Social widget
 SOCIAL_WIDGET_NAME = 'Kontakt'
-SOCIAL = (('Email', 'mailto:email@example.org'),)
+SOCIAL = (('Email', encrypt('mailto:email@example.org'), True),)
 
 STATIC_PATHS = ['images']
 
