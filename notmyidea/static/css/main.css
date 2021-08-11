@@ -221,6 +221,9 @@ div.dark-theme-toggle{
 	top: 0.5em;
 	right: 0.5em;
 }
+.dark-theme-toggle button{
+	font-size: larger;
+}
 .dark .dark-theme-button,.light .light-theme-button{
 	display: none;
 }
