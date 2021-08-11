@@ -10,6 +10,7 @@ SITELOGO = '/images/logo.svg'
 PATH = 'content'
 THEME = '../Codeberg/NotMyIdea-Theme-Pelican/notmyidea/'
 ALLOW_DARKTHEME = True
+REMEMBER_DARKTHEME = True
 
 TIMEZONE = 'Europe/Berlin'
 
