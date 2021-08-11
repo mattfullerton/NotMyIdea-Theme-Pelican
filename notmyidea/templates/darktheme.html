@@ -1,22 +1,69 @@
 {% if ALLOW_DARKTHEME %}
 <script>
     var r = document.documentElement;
-    function enableDarktheme(){
+
+    {% if REMEMBER_DARKTHEME %}
+    function saveDarkThemeSetting(isDarkThemeEnabled){
+        localStorage.setItem('darkTheme', isDarkThemeEnabled);
+    };
+    function resetDarkThemeSetting(){
+        localStorage.removeItem('darkTheme');
+    };
+    {% endif %}
+
+    function enableDarktheme(saveChoice=false){
         r.classList.remove("light");
         r.classList.add("dark");
-    }
-    function enableLighttheme(){
+        {% if REMEMBER_DARKTHEME %}
+        if(saveChoice){
+          saveDarkThemeSetting(1);
+        }
+        {% endif %}
+    };
+    function enableLighttheme(saveChoice=false){
         r.classList.remove("dark");
         r.classList.add("light");
-    }
+        {% if REMEMBER_DARKTHEME %}
+        if(saveChoice){
+          saveDarkThemeSetting(-1);
+        }
+        {% endif %}
+    };
 
+    function isDarkThemePreferred(){
+        var darkThemePreferred = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        console.log("dark theme preferred (media query): " + darkThemePreferred.toString())
+        return darkThemePreferred;
+    };
+
+    function darkThemeSettingExists(){
+      var exists = (localStorage.getItem('darkTheme') !== null)
+      console.log("exists: " + exists.toString());
+      return exists;
+    };
+    function isDarkThemeSet(){
+      var darkThemeSet = (localStorage.getItem('darkTheme') > 0)
+      console.log("darkThemeSet: " + darkThemeSet.toString());
+      return darkThemeSet;
+    };
+
+    if(darkThemeSettingExists()){
+      if(isDarkThemeSet()){
+        enableDarktheme();
+      }
+    }
+    else{
+      if(isDarkThemePreferred()){
+        enableDarktheme();
+      }
+    }
 </script>
 <div class="dark-theme-toggle">
-    <button class="light-theme-button" onclick="enableLighttheme()" title="Light mode">
-      Light Mode
+    <button class="light-theme-button" onclick="enableLighttheme(saveChoice=true)" title="Light mode">
+      ☀️
     </button>
-    <button class="dark-theme-button" onclick="enableDarktheme()" title="Dark mode">
-      Dark Mode
+    <button class="dark-theme-button" onclick="enableDarktheme(saveChoice=true)" title="Dark mode">
+      🌒
     </button>
 </div>
     
