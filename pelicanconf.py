@@ -15,8 +15,8 @@ def encrypt(input):
 SITENAME = 'Headline'
 SITESUBTITLE = 'Subtitle'
 SITEURL = ''
-ICON_URL= '/images/favicon.ico'
-SITELOGO = '/images/logo.svg'
+ICON_URL= 'images/favicon.ico'
+SITELOGO = 'images/logo.svg'
 
 PATH = 'content'
 THEME = '../Codeberg/NotMyIdea-Theme-Pelican/notmyidea/'

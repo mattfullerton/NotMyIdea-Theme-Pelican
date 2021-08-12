@@ -6,7 +6,7 @@
         <meta name="generator" content="Pelican" />
         <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
         {% if ICON_URL %}
-        <link rel="icon" href="{{ ICON_URL }}" type="image/x-icon">
+        <link rel="icon" href="{{ SITEURL }}/{{ ICON_URL }}" type="image/x-icon">
         {% endif %}
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
@@ -26,7 +26,7 @@
         <header id="banner" class="body">
                 <a href="{{ SITEURL }}/" id="sitename">
                         {% if SITELOGO %}
-                        <img src="{{ SITELOGO }}" alt="Logo"/>
+                        <img src="{{ SITEURL }}/{{ SITELOGO }}" alt="Logo"/>
                         {% endif %}
                         <div>
                                 <h1>{{ SITENAME }}</h1> 
