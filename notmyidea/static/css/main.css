@@ -222,7 +222,7 @@ div.dark-theme-toggle{
 	right: 0.5em;
 }
 .dark-theme-toggle button{
-	font-size: larger;
+	font-size: large;
 }
 .dark .dark-theme-button,.light .light-theme-button{
 	display: none;
