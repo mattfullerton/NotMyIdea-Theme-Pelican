@@ -38,7 +38,7 @@ AUTHOR_FEED_RSS = None
 LINKS_WIDGET_NAME = 'Links'
 LINKS = (('Impressum', 'impressum'),
 		 ('Datenschutzerklärung', 'datenschutz'),
-		 ('Design-Quellcode', '#'))
+		 ('Design-Quellcode', 'https://codeberg.org/F_Thoma/NotMyIdea-Theme-Pelican'))
 
 # Social widget
 SOCIAL_WIDGET_NAME = 'Kontakt'
