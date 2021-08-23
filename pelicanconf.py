@@ -36,8 +36,8 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS_WIDGET_NAME = 'Links'
-LINKS = (('Impressum', 'impressum'),
-		 ('Datenschutzerklärung', 'datenschutz'),
+LINKS = (('Impressum', 'pages/impressum'),
+		 ('Datenschutzerklärung', 'pages/datenschutz'),
 		 ('Design-Quellcode', 'https://codeberg.org/F_Thoma/NotMyIdea-Theme-Pelican'))
 
 # Social widget
