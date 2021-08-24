@@ -264,7 +264,7 @@ div.dark-theme-toggle{
 
 	/* Main Nav */
 	#banner nav {
-		background: var(--main-color);
+		background: var(--weakened-main-color-2);
 		font-size: 1.143em;
 		/* height: 40px; */
 		line-height: 30px;
