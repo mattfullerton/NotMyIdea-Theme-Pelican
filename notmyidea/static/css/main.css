@@ -138,7 +138,7 @@ q {}
 
 div.note {
    float: right;
-   margin: 5px;
+   margin:0.3em;
    font-size: 85%;
    max-width: 300px;
 }
@@ -266,9 +266,9 @@ div.dark-theme-toggle{
 		text-align: left;
 		max-width: 800px;
 
-		border-radius: 5px;
-		-moz-border-radius: 5px;
-		-webkit-border-radius: 5px;
+		border-radius: 0.3em;
+		-moz-border-radius: 0.3em;
+		-webkit-border-radius: 0.3em;
 	}
 
 	#banner nav ul {list-style: none; margin: 0 auto; max-width: 800px;}
@@ -278,7 +278,7 @@ div.dark-theme-toggle{
 		color: var(--strengthened-main-background);
 		display: inline-block;
 		height: 30px;
-		padding: 5px 1.5em;
+		padding: 0.3em 1.5em;
 		text-decoration: none;
 	}
 	#banner nav a:hover, #banner nav a:active,
@@ -289,13 +289,13 @@ div.dark-theme-toggle{
 	}
 
 	#banner nav li:first-child a {
-		border-top-left-radius: 5px;
-		-moz-border-radius-topleft: 5px;
-		-webkit-border-top-left-radius: 5px;
+		border-top-left-radius: 0.3em;
+		-moz-border-radius-topleft: 0.3em;
+		-webkit-border-top-left-radius: 0.3em;
 
-		border-bottom-left-radius: 5px;
-		-moz-border-radius-bottomleft: 5px;
-		-webkit-border-bottom-left-radius: 5px;
+		border-bottom-left-radius: 0.3em;
+		-moz-border-radius-bottomleft: 0.3em;
+		-webkit-border-bottom-left-radius: 0.3em;
 	}
 
 /*
@@ -445,7 +445,7 @@ div.dark-theme-toggle{
 
 #about .primary {float: left; width: 165px;}
 #about .primary strong {color: var(--accent-color); display: block; font-size: 1.286em;}
-#about .photo {float: left; margin: 5px 20px;}
+#about .photo {float: left; margin:0.3em 20px;}
 
 #about .url:link, #about .url:visited {text-decoration: none;}
 
@@ -498,9 +498,9 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 		margin: 2em 0;
 		padding: 10px 20px 15px 20px;
 
-		border-radius: 5px;
-		-moz-border-radius: 5px;
-		-webkit-border-radius: 5px;
+		border-radius:0.3em;
+		-moz-border-radius:0.3em;
+		-webkit-border-radius:0.3em;
 	}
 
 	#about-author strong {
@@ -510,7 +510,7 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 		font-size: 1.429em;
 	}
 
-	#about-author .photo {border: 1px solid #ddd; float: left; margin: 5px 1em 0 0;}
+	#about-author .photo {border: 1px solid #ddd; float: left; margin:0.3em 1em 0 0;}
 
 	/* Comments */
 	#comments-list {list-style: none; margin: 0 1em;}
@@ -521,9 +521,9 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 		margin: 0;
 		padding: 15px 20px;
 
-		border-radius: 5px;
-		-moz-border-radius: 5px;
-		-webkit-border-radius: 5px;
+		border-radius:0.3em;
+		-moz-border-radius:0.3em;
+		-webkit-border-radius:0.3em;
 	}
 	#comments-list footer {color: #888; padding: .5em 1em 0 0; text-align: right;}
 
