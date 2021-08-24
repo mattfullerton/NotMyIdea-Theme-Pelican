@@ -194,7 +194,7 @@ button{
 
 
 /***** Layout *****/
-.body {clear: both; margin: 0 auto; max-width: 800px;}
+.body {clear: both; margin: 0 auto;}
 img.right, figure.right, div.figure.align-right {
     float: right;
     margin: 0 0 2em 2em;
@@ -235,6 +235,7 @@ div.dark-theme-toggle{
 #banner {
 	margin: 0 auto;
 	padding: 2.5em 0 0 0;
+	text-align: center;
 }
 
 	/* Sitename */
@@ -242,13 +243,19 @@ div.dark-theme-toggle{
 		color: var(--main-color);
 		display: block;
 		font-weight: bold;
-		margin: 0 0 .6em .2em;
+		padding: 0 0 .6em .2em;
+		margin: 0 auto;
 		text-decoration: none;
+		width: 800px;
+		max-width: 100%;
+		text-align: left;
 	}
 	a:hover#sitename, a:active#sitename {
 		background: none;
 		color: var(--accent-color);
 		text-shadow: none;
+		width: 800px;
+		max-width: 100%;
 	}
 	#sitename img {height: 5em; margin-right: 0.4em}
 	#sitename div {display: inline-block;}
@@ -261,18 +268,19 @@ div.dark-theme-toggle{
 		font-size: 1.143em;
 		/* height: 40px; */
 		line-height: 30px;
-		margin: 0 0 2em 0;
+		margin: 0 auto 2em auto;
 		padding: 0;
-		text-align: left;
-		max-width: 800px;
-
-		border-radius: 0.3em;
-		-moz-border-radius: 0.3em;
-		-webkit-border-radius: 0.3em;
+		text-align: center;
 	}
 
-	#banner nav ul {list-style: none; margin: 0 auto; max-width: 800px;}
-	#banner nav li {display: inline-block; margin: 0;}
+	#banner nav ul {
+		list-style: none; 
+		margin: 0 auto;
+	}
+	#banner nav li {
+		display: inline-block; 
+		margin: 0;
+	}
 
 	#banner nav a:link, #banner nav a:visited {
 		color: var(--strengthened-main-background);
@@ -288,15 +296,6 @@ div.dark-theme-toggle{
 		text-shadow: none !important;
 	}
 
-	#banner nav li:first-child a {
-		border-top-left-radius: 0.3em;
-		-moz-border-radius-topleft: 0.3em;
-		-webkit-border-top-left-radius: 0.3em;
-
-		border-bottom-left-radius: 0.3em;
-		-moz-border-radius-bottomleft: 0.3em;
-		-webkit-border-bottom-left-radius: 0.3em;
-	}
 
 /*
 	Featured
