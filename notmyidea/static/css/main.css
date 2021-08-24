@@ -234,7 +234,7 @@ div.dark-theme-toggle{
 *****************/
 #banner {
 	margin: 0 auto;
-	padding: 2.5em 0 0 0;
+	padding: 2.5em 0 1.2em 0;
 	text-align: center;
 }
 
@@ -268,7 +268,6 @@ div.dark-theme-toggle{
 		font-size: 1.143em;
 		/* height: 40px; */
 		line-height: 30px;
-		margin: 0 auto 2em auto;
 		padding: 0;
 		text-align: center;
 	}
