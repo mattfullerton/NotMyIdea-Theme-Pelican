@@ -23,8 +23,9 @@ THEME = '../Codeberg/NotMyIdea-Theme-Pelican/notmyidea/'
 ALLOW_DARKTHEME = True
 REMEMBER_DARKTHEME = True
 
-TIMEZONE = 'Europe/Berlin'
+STARTPAGE = 'index.html'
 
+TIMEZONE = 'Europe/Berlin'
 DEFAULT_LANG = 'de'
 
 # Feed generation is usually not desired when developing
