@@ -374,7 +374,7 @@ div.dark-theme-toggle{
 
 	/* Blogroll */
 	#extras .blogroll {
-		max-width: 615px;
+		max-width: 600px;
 		margin-top: 2em;
 		display: inline-block;
 		vertical-align: top;
@@ -388,7 +388,7 @@ div.dark-theme-toggle{
 
 	/* Social */
 	#extras .social {
-		width: 175px;
+		width: 180px;
 		margin-top: 2em;
 		display: inline-block;
 		vertical-align: top;
