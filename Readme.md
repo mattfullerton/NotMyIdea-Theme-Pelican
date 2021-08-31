@@ -10,6 +10,8 @@ Download the folder `notmyidea`.
 Run pelican with the argument `-t /path/to/notmyidea` or put the line `THEME = '/path/to/notmyidea'` into the `pelicanconf.py` file.
 Take a look at the `pelicanconf.py` provided in this repo to configure theme-specific features.
 
+Add the tag `ArticlePic: images/picture.png` to your article or page to show wide pictures at the top of the page between the navigation bar and the beginning of the article/page. 
+
 ### Features
 - mobile friendly (but not highly optimized)
 - logo and favicon possible
@@ -17,3 +19,4 @@ Take a look at the `pelicanconf.py` provided in this repo to configure theme-spe
 - comes with a dark theme (setting can optionally be saved to local storage)
 - supports the plugin [`simple-footnotes`](https://github.com/pelican-plugins/simple-footnotes/)
 - light bot protection for emails addresses (they can be encrypted so that bots which don't use javascript won't get the email address)
+- Optionally show a picture above the article/page title (the picture is set individually per page)

@@ -368,6 +368,11 @@ div.bannerpic {
 	background-size: contain;
 	background-position: center 0;
 	background-repeat: no-repeat;
+
+	/*
+	background-size: cover;
+	background-position: center center;
+	*/
 }
 .bannerpic img{
 	visibility: hidden;
