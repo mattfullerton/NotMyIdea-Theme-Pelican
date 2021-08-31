@@ -46,7 +46,7 @@ body {
     line-height: 1.429;
     margin: 0;
     padding: 0;
-    text-align: left;
+    text-align: center;
 }
 
 /* Headings */
@@ -181,6 +181,7 @@ table {margin: .5em auto 1.5em auto; width: 98%;}
 header, section, footer,
 aside, nav, article, figure {
 	display: block;
+	text-align: left;
 }
 
 /* Buttons */
@@ -238,7 +239,7 @@ div.dark-theme-toggle{
 *****************/
 #banner {
 	margin: 0 auto;
-	padding: 2.5em 0 1.2em 0;
+	padding: 2.5em 0 0em 0;
 	text-align: center;
 }
 
@@ -310,6 +311,8 @@ div.dark-theme-toggle{
 	padding: 20px;
 	width: 760px;
 
+	margin-top: 1.2em;
+
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -332,15 +335,45 @@ div.dark-theme-toggle{
 /*
 	Body
 *****************/
-#content {
+#content .body, #content.body{
 	background: var(--strengthened-main-background);
 	overflow: hidden;
 	padding: 20px 20px;
 	max-width: 760px;
+}
 
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+#content.withbanner {
+	margin-top: 0.8em;
+}
+
+@media (min-width: 820px) {
+	#content {
+		margin-top: 1.2em;
+	}
+	#content.withbanner {
+		margin-top: 0em;
+	}
+
+	#content .body, #content.body{
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+	}
+	#content.withbanner .body{
+		margin-top: -4.75em;
+	}
+}
+
+div.bannerpic {
+	background-size: contain;
+	background-position: center 0;
+	background-repeat: no-repeat;
+}
+.bannerpic img{
+	visibility: hidden;
+	max-width: 100%;
+	max-height: 30em;
+	margin-bottom: -5px;
 }
 
 /*
