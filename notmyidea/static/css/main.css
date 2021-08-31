@@ -214,7 +214,7 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
     margin-bottom: 0;
 }
 
-section#content img{
+section#content .body img, section#content.body img{
 	width: 100%;
 }
 
@@ -350,8 +350,12 @@ div.dark-theme-toggle{
 	#content {
 		margin-top: 1.2em;
 	}
+	
 	#content.withbanner {
+		margin-top: 1.2em;
+		/* Für breites Banner:
 		margin-top: 0em;
+		*/
 	}
 
 	#content .body, #content.body{
@@ -365,11 +369,14 @@ div.dark-theme-toggle{
 }
 
 div.bannerpic {
+	text-align: center;
+	margin: 0 auto;
+
 	background-size: contain;
 	background-position: center 0;
 	background-repeat: no-repeat;
 
-	/*
+	/* Für breites Banner:
 	background-size: cover;
 	background-position: center center;
 	*/
