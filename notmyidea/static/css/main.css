@@ -502,7 +502,7 @@ div.bannerpic {
 .hentry {
 	display: block;
 	clear: both;
-	border-top: 1px solid var(--weakened-main-background-2);
+	border-top: 0.2em solid var(--accented-main-background);
 	padding: 1.5em 0;
 }
 li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
@@ -522,14 +522,6 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	/* Blog Index */
 	#posts-list {list-style: none; margin: 0;}
 	#posts-list .hentry {padding-left: 10px; position: relative;}
-
-	#posts-list footer {
-		left: 10px;
-		position: relative;
-        float: left;
-		top: 0.5em;
-		width: 190px;
-	}
 
 	/* About the Author */
 	#about-author {
