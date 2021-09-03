@@ -19,4 +19,4 @@ Add the tag `ArticlePic: images/picture.png` to your article or page to show wid
 - comes with a dark theme (setting can optionally be saved to local storage)
 - supports the plugin [`simple-footnotes`](https://github.com/pelican-plugins/simple-footnotes/)
 - light bot protection for emails addresses (they can be encrypted so that bots which don't use javascript won't get the email address)
-- Optionally show a picture above the article/page title (the picture is set individually per page)
+- Optionally show a picture above the article/page title (there can be a default and the picture can be overwritten/removed individually per page).

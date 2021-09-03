@@ -17,6 +17,7 @@ SITESUBTITLE = 'Subtitle'
 SITEURL = ''
 ICON_URL= 'images/favicon.ico'
 SITELOGO = 'images/logo.svg'
+DEFAULT_BANNER_PIC = 'images/default_banner.png'
 
 PATH = 'content'
 THEME = '../Codeberg/NotMyIdea-Theme-Pelican/notmyidea/'

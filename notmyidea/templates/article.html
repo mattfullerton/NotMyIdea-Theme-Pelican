@@ -17,12 +17,8 @@
 {% endblock %}
 
 {% block content %}
-<section id="content" {% if article.articlepic %} class="withbanner" {% endif %}>
-  {% if article.articlepic %}
-  <div style="background-image: url('{{ SITEURL }}/{{ article.articlepic }}')" class="bannerpic"> 
-    <img src="{{ SITEURL }}/{{ article.articlepic }}" />
-  </div>
-  {% endif %}
+<section id="content" {% if article.articlepic or DEFAULT_BANNER_PIC %} class="withbanner" {% endif %}>
+  {% include 'banner_pic.html' %}
   <div class="body first">
     <article>
       <header>
