@@ -268,7 +268,7 @@ div.dark-theme-toggle{
 
 	/* Main Nav */
 	#banner nav {
-		background: var(--weakened-main-color-2);
+		background: var(--accent-color);
 		font-size: 1.143em;
 		/* height: 40px; */
 		line-height: 30px;
@@ -294,7 +294,7 @@ div.dark-theme-toggle{
 	}
 	#banner nav a:hover, #banner nav a:active,
 	#banner nav .active a:link, #banner nav .active a:visited {
-		background: var(--accent-color);
+		background: var(--weakened-main-color-2);
 		color: var(--strengthened-main-background);
 		text-shadow: none !important;
 	}
