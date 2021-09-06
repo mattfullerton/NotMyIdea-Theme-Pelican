@@ -6,12 +6,8 @@
 
         {# First item #}
         {% if loop.first and not articles_page.has_previous() %}
-            <div id="content" {% if article.articlepic %} class="withbanner" {% endif %}>
-            {% if article.articlepic %}
-            <div style="background-image: url('{{ SITEURL }}/{{ article.articlepic }}')" class="bannerpic"> 
-                <img src="{{ SITEURL }}/{{ article.articlepic }}" />
-            </div>
-            {% endif %}
+            <div id="content" {% if article.articlepic or DEFAULT_BANNER_PIC %} class="withbanner" {% endif %}>
+            {% include 'banner_pic.html' %}}
             <article id="featured" class="body first">
                 <h1 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
                 {% include 'article_infos.html' %}{{ article.content }}{% include 'comments.html' %}
