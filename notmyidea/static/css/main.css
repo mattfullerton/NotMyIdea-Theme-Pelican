@@ -155,11 +155,11 @@ sup{
 }
 sup a.simple-footnote:link, sup a.simple-footnote:visited{
 	text-decoration: none;
-	font-family: 'Trebuchet MS';
+	font-weight: 400;
 }
 .simple-footnotes ::marker{
 	color: var(--accent-color);
-	font-family: 'Trebuchet MS';
+	font-weight: 400;
 }
 .simple-footnotes{
 	font-size: smaller;
