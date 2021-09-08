@@ -47,6 +47,7 @@ SOCIAL_WIDGET_NAME = 'Kontakt'
 SOCIAL = (('Email', encrypt('mailto:email@example.org'), True),)
 
 STATIC_PATHS = ['images']
+PHOTOGRAPHER = 'Max Mustermann'
 
 
 DEFAULT_PAGINATION = False
