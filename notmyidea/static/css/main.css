@@ -114,9 +114,10 @@ ol {
 li { margin: 0.3em auto; }
 
 .post-info {
-    float:right;
-    margin:10px;
-    padding:5px;
+    float: right;
+    margin: 1em;
+    padding: 0.5em;
+	font-family: 'Trebuchet MS';
 }
 
 .post-info p{
@@ -154,11 +155,11 @@ sup{
 }
 sup a.simple-footnote:link, sup a.simple-footnote:visited{
 	text-decoration: none;
-	font-weight: 400;
+	font-family: 'Trebuchet MS';
 }
 .simple-footnotes ::marker{
 	color: var(--accent-color);
-	font-weight: 400;
+	font-family: 'Trebuchet MS';
 }
 .simple-footnotes{
 	font-size: smaller;
@@ -278,6 +279,7 @@ div.dark-theme-toggle{
 		background: var(--accent-color);
 		font-size: 1.143em;
 		/* height: 40px; */
+		font-family: 'Trebuchet MS';
 		line-height: 30px;
 		padding: 0;
 		text-align: center;
@@ -394,6 +396,7 @@ div.bannerpic {
 #extras {
 	margin: 0 auto 3em auto;
 	max-width: 800px;
+	font-family: 'Trebuchet MS';
 }
 
 #extras ul {list-style: none; margin: 0;}
