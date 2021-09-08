@@ -48,6 +48,8 @@ SOCIAL = (('Email', encrypt('mailto:email@example.org'), True),)
 
 STATIC_PATHS = ['images']
 PHOTOGRAPHER = 'Max Mustermann'
+PHOTOGRAPHER_URL = 'https://de.wikipedia.org/wiki/Mustermann'
+
 
 
 DEFAULT_PAGINATION = False

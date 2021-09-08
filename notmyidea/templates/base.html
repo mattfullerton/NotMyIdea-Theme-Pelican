@@ -78,10 +78,13 @@
         {% endif %}
         </section><!-- /#extras -->
         <footer id="copyright" class="body">
-                {% if PHOTOGRAPHER %} <p>All photos on this page are by {{ PHOTOGRAPHER }}.</p> {% endif %}
-                <p>The Font Roboto is licensed under the <a href="/theme/static/fonts/Apache-LICENSE-2.0.txt">Apache License, Version 2.0</a>. You can find the project <a href="https://github.com/googlefonts/roboto">here</a>.</p>
-                <p>The Font Yanone Kaffeesatz is licensed under the <a href="/theme/static/fonts/Yanone_Kaffeesatz-License-OFL.txt">SIL Open Font License, Version 1.1</a> and copyrighted by The Yanone Kaffeesatz Project Authors.  You can find the project <a href="https://github.com/alexeiva/yanone-kaffeesatz">here</a>.</p>
-                <p>A big thank you to all of you!</p>
+                <p>
+                {% if PHOTOGRAPHER %} All photos on this page are by
+                        {% if PHOTOGRAPHER_URL %} <a href="{{ PHOTOGRAPHER_URL }}">{{ PHOTOGRAPHER }}</a>{% else %}{{ PHOTOGRAPHER }}{% endif %}.<br/>
+                {% endif %}
+                The Font Roboto is licensed under the <a href="/theme/static/fonts/Apache-LICENSE-2.0.txt">Apache License, Version 2.0</a>. You can find the project <a href="https://github.com/googlefonts/roboto">here</a>.<br/>
+                The Font Yanone Kaffeesatz is licensed under the <a href="/theme/static/fonts/Yanone_Kaffeesatz-License-OFL.txt">SIL Open Font License, Version 1.1</a> and copyrighted by The Yanone Kaffeesatz Project Authors.  You can find the project <a href="https://github.com/alexeiva/yanone-kaffeesatz">here</a>.<br/>
+                Thank you!</p>
         </footer><!-- /#copyright -->
 
         {% include 'email_protection.html' %}
