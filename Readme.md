@@ -23,7 +23,7 @@ Add the tag `ArticlePic: images/picture.png` to your article or page to show wid
 
 ## License and Copyright
 
-The Font `Roboto` is licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0). [Source](https://github.com/googlefonts/roboto).
+The Font `Roboto` is licensed under the [Apache License, Version 2.0](./notmyidea/static/fonts/Apache-LICENSE-2.0.txt). [Source](https://github.com/googlefonts/roboto).
 
 The Font `Yanone Kaffeesatz` is licensed under the [SIL Open Font License, Version 1.1](./notmyidea/static/fonts/Yanone_Kaffeesatz-License-OFL.txt) copyrighted by The Yanone Kaffeesatz Project Authors. [Source](https://github.com/alexeiva/yanone-kaffeesatz).
 
