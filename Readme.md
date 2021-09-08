@@ -20,3 +20,11 @@ Add the tag `ArticlePic: images/picture.png` to your article or page to show wid
 - supports the plugin [`simple-footnotes`](https://github.com/pelican-plugins/simple-footnotes/)
 - light bot protection for emails addresses (they can be encrypted so that bots which don't use javascript won't get the email address)
 - Optionally show a picture above the article/page title (there can be a default and the picture can be overwritten/removed individually per page).
+
+## License and Copyright
+
+The Font `Roboto` is licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0). [Source](https://github.com/googlefonts/roboto).
+
+The Font `Yanone Kaffeesatz` is licensed under the [SIL Open Font License, Version 1.1](/notmyidea/static/fonts/Yanone_Kaffeesatz-License-OFL.txt) copyrighted by The Yanone Kaffeesatz Project Authors. [Source](https://github.com/alexeiva/yanone-kaffeesatz).
+
+The rest of this repository is under the [GNU AFFERO GENERAL PUBLIC LICENSE Version 3](LICENSE).
