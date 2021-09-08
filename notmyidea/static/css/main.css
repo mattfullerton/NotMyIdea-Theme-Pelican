@@ -42,11 +42,16 @@ body {
     background: var(--main-background);
     color: var(--main-color);
     font-size: 87.5%; /* Base font size: 14px */
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+	font-weight: 300;
     line-height: 1.429;
     margin: 0;
     padding: 0;
     text-align: center;
+}
+
+p, abbr, #extras li{
+	font-size: 108%;
 }
 
 /* Headings */
@@ -92,7 +97,7 @@ div.line-block,
 p { margin-top: 1em;
     margin-bottom: 1em;}
 
-strong, b {font-weight: bold;}
+strong, b {font-weight: 500;}
 em, i {font-style: italic;}
 
 /* Lists */
@@ -494,7 +499,14 @@ div.bannerpic {
 /*
 	Footer
 *****************/
-#contentinfo {padding-bottom: 2em; text-align: right;}
+#copyright {
+	padding-bottom: 0.8em;
+	text-align: right;
+	max-width: 900px;
+}
+#copyright p {
+	font-size: 97%;
+}
 
 /***** Sections *****/
 /* Blog */
