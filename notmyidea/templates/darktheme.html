@@ -32,18 +32,18 @@
 
     function isDarkThemePreferred(){
         var darkThemePreferred = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        console.log("dark theme preferred (media query): " + darkThemePreferred.toString())
+        console.debug("Is the dark theme preferred (media query): " + darkThemePreferred.toString())
         return darkThemePreferred;
     };
 
     function darkThemeSettingExists(){
       var exists = (localStorage.getItem('darkTheme') !== null)
-      console.log("exists: " + exists.toString());
+      console.debug("Dark theme setting exists: " + exists.toString());
       return exists;
     };
     function isDarkThemeSet(){
       var darkThemeSet = (localStorage.getItem('darkTheme') > 0)
-      console.log("darkThemeSet: " + darkThemeSet.toString());
+      console.debug("Is the dark theme set (manually): " + darkThemeSet.toString());
       return darkThemeSet;
     };
 
