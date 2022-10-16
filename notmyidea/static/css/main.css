@@ -114,15 +114,21 @@ ol {
 li { margin: 0.3em auto; }
 
 .post-info {
-    float: right;
+    float: left;
     margin: 1em;
     padding: 0.5em;
-	font-family: 'Trebuchet MS';
+	  font-family: 'Trebuchet MS';
+	  width: 30%;
+	  background: #fafafa;
 }
 
 .post-info p{
     margin-top: 1px;
     margin-bottom: 1px;
+}
+
+.readmore {
+    float: right;
 }
 
 
